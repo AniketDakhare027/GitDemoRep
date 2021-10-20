@@ -1,0 +1,40 @@
+o check an alert
+
+driver.switchTo().alert().accept();
+driver.switchTo().alert().dismiss();
+
+Window hanldes
+
+String handl=driver.getwindowHandle();
+Set<string> handl=driver.getwindowHandles();
+Iterator<String> l1=handl.iterator();
+l1.next;
+
+DropDown
+
+Select dropDown=new select(driver.findElement(By.name("country")));
+dropDown.selectByVisibleText("India");
+selectByValue();
+selectByIndex();
+
+Implicit Wait
+driver.manage().timeout().implicitlywait(10,timeunit.second);
+
+reverse the string
+
+class ReverseString {
+    public static void main(String[] args)
+    {
+        String input = "Geeks for Geeks";
+ 
+        StringBuilder input1 = new StringBuilder();
+ 
+        // append a string into StringBuilder input1
+        input1.append(input);
+ 
+        // reverse StringBuilder input1
+        input1.reverse();
+ 
+        // print reversed String
+        System.out.println(input1);
+    }
